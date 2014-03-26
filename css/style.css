@@ -1,0 +1,28 @@
+/** blue #013299 / yellow #F4D400 **/
+
+
+body, html {
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 100%;
+}
+
+body { 
+  background: url('../images/bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container-fluid.start {
+	height: 100%;
+}
+
+
+/** START PAGE **/
+
+/** chumm doch wieder mau - WIDGET **/
+.chumm-doch-wieder-mau {
+	background-color: #fff;
+	opacity: 1.0;
+}

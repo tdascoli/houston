@@ -1,0 +1,46 @@
+/** blue #013299 / yellow #F4D400 **/
+
+
+@blue:      #013299;
+@blue-dark: darken(@blue, 5%);
+
+@yellow:    #F4D400;
+
+body, html {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: @blue-dark;
+  height: 100%;
+}
+
+body {
+  background: url('../../images/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container-fluid.start {
+  height: 100%;
+}
+
+
+/** START PAGE **/
+
+/** chumm doch wieder mau - WIDGET **/
+.chumm-doch-wieder-mau {
+
+-ms-transform: skew(0deg,10deg);
+-webkit-transform: skew(0deg,0deg);
+transform: skew(0deg,10deg);
+
+
+  width: 25%;
+  background-color: @yellow;
+  color: @blue;
+  opacity: 1.0;
+}
+.chumm-doch-wieder-mau h2 {
+  color: @blue;
+  font-size: 1.2em;
+}
