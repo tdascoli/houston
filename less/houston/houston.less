@@ -1,6 +1,5 @@
 /** blue #013299 / yellow #F4D400 **/
 
-
 @blue:      #013299;
 @blue-dark: darken(@blue, 5%);
 
@@ -13,7 +12,7 @@ body, html {
 }
 
 body {
-  background: url('../../images/bg.jpg') no-repeat center center fixed;
+  background: url('../../img/IMG_2337.JPG') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,19 +20,28 @@ body {
 }
 
 .container-fluid.start {
-  height: 100%;
+  height: calc(~'100% - 100px');
 }
 
+.white {
+  background-color: #ffffff;
+}
+
+.navigation {
+  background-color: @blue;
+  color: #ffffff;
+  height: 100px;
+}
 
 /** START PAGE **/
 
 /** chumm doch wieder mau - WIDGET **/
 .chumm-doch-wieder-mau {
-
+/*
 -ms-transform: skew(0deg,10deg);
 -webkit-transform: skew(0deg,0deg);
 transform: skew(0deg,10deg);
-
+*/
 
   width: 25%;
   background-color: @yellow;
@@ -43,4 +51,9 @@ transform: skew(0deg,10deg);
 .chumm-doch-wieder-mau h2 {
   color: @blue;
   font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.test {
+  background: url('../../img/IMG_2350.JPG') no-repeat;
 }
