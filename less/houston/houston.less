@@ -2,6 +2,8 @@
 
 @blue:      #013299;
 @blue-dark: darken(@blue, 5%);
+@blue-light: lighten(@blue, 50%);
+
 
 @yellow:    #F4D400;
 
@@ -12,14 +14,24 @@ body, html {
 }
 
 body {
-  background: url('../../img/IMG_2337.JPG') no-repeat center center fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.start {
+  background-image: url('../../img/bg/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  margin: 0;
+  padding: 0;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
 
-.container-fluid.start {
   height: calc(~'100% - 100px');
 }
 
@@ -27,33 +39,252 @@ body {
   background-color: #ffffff;
 }
 
-.navigation {
-  background-color: @blue;
-  color: #ffffff;
-  height: 100px;
+.navbar {
+  margin-bottom: 0;
 }
 
 /** START PAGE **/
-
-/** chumm doch wieder mau - WIDGET **/
-.chumm-doch-wieder-mau {
-/*
--ms-transform: skew(0deg,10deg);
--webkit-transform: skew(0deg,0deg);
-transform: skew(0deg,10deg);
-*/
-
-  width: 25%;
-  background-color: @yellow;
-  color: @blue;
-  opacity: 1.0;
+.start div.fclg {
+  position: absolute;
+  top: 3em;
+  right: 2em;
+  text-align: right;
 }
+
+.fclg div {
+  float: left;
+}
+
+.fclg span.title {
+  /*float: right;*/
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  background-color: @yellow;
+  padding: 20px 50px;
+  margin: 0;
+
+  opacity: 0.8;
+
+  @media (min-width: 480px) {
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 2em;
+  }
+  @media (min-width: 768px) {
+    padding: 10px 30px;
+    margin: 0;
+    font-size: 2.5em;
+  }
+  @media (min-width: 992px) {
+    padding: 20px 50px;
+    margin: 0;
+    font-size: 3em;
+  }
+  @media (min-width: 1200px) {
+    padding: 20px 50px;
+    margin: 0;
+    font-size: 4em;
+  }
+}
+.fclg span.subtitle {
+  font-weight: bold;
+  background-color: @blue;
+  opacity: 0.8;
+  font-size: 2.5em;
+  padding: 0px 20px 10px 20px;
+  margin: 0;
+  color: @yellow;
+
+  @media (min-width: 480px) {
+    padding: 0px 10px 5px 10px;
+    font-size: 1.4em;
+  }
+  @media (min-width: 768px) {
+    font-size: 1.75em;
+  }
+  @media (min-width: 992px) {
+    font-size: 2em;
+  }
+  @media (min-width: 1200px) {
+    padding: 0px 20px 10px 20px;
+    font-size: 2.5em;
+  }
+}
+.fclg img {
+  float: right;
+  padding: 20px 0px;
+  background-color: @yellow;
+  opacity: 1.0;
+  height: 150px;
+  width: auto;
+
+  @media (min-width: 480px) {
+    padding: 5px 0px;
+    height: 100px;
+
+  }
+  @media (min-width: 768px) {
+    padding: 10px 0px;
+    height: 125px;
+
+  }
+  @media (min-width: 992px) {
+    padding: 15px 0px;
+    height: 150px;
+
+  }
+  @media (min-width: 1200px) {
+    padding: 20px 0px;
+    height: 200px;
+  }
+}
+
+
+/** chumm doch wieder mau **/
+.chumm-doch-wieder-mau {
+  background-color: @yellow;
+
+  -webkit-box-shadow: 2px 2px 2px 0px #ccc;
+  -moz-box-shadow: 2px 2px 2px 0px #ccc;
+  box-shadow: 2px 2px 2px 0px #ccc;
+}
+.chumm-doch-wieder-mau .plakat {
+  padding: 10px 5px 10px 5px;
+}
+div.titel {
+  margin: auto;
+
+  -ms-transform: skew(0deg,10deg);
+  -webkit-transform: skew(0deg,-10deg);
+  transform: skew(0deg,10deg);
+}
+
 .chumm-doch-wieder-mau h2 {
+
+  width: 100%;
+
   color: @blue;
   font-size: 1.2em;
   text-transform: uppercase;
+  margin: 0;
+
+}
+.spiel {
+  padding: 5px;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.8;
+  background-color: #ffffff;
+  height: 100px;
+  margin: 1em 0 1em 0;
+
+  -ms-transform: skew(0deg,3deg);
+  -webkit-transform: skew(0deg,-3deg);
+  transform: skew(0deg,3deg);
+}
+.spiel span {
+  padding-top: 1em;
+}
+.spiel .home {
+  padding-top: 5px;
+  float: left;
+}
+.spiel .away {
+  padding-top: 5px;
+  float: right;
+}
+.chumm-doch-wieder-mau .sponsoren {
+  background-color: @blue;
+  color: #ffffff;
+  padding: 0px 5px 10px 5px;
+}
+.sponsoren .main-sponsor {
+  float: left;
+  width: 66%;
+}
+.sponsoren .main-sponsor img {
+  width: 90%;
+}
+.sponsoren .sponsor {
+  float: left;
+  width: 34%;
+}
+.sponsoren .sponsor img {
+  width: 100%;
+  padding-top: 0.5em;
+}
+/*
+.chumm-doch-wieder-mau ul.naechste-spiele {
+  padding: 0px 5px 5px 5px;
+}
+*/
+ul.naechste-spiele {
+  list-style: none;
+  padding-left: 0;
+}
+ul.naechste-spiele li {
+   padding-bottom: 0.66em;
+}
+ul.naechste-spiele li:last-child {
+  padding-bottom: 0;
+}
+a.naechste-spiele-team {
+  font-weight: bold;
+  color: @blue-dark;
+}
+.teams {
+  background: url('../../img/bg/IMG_9016.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.test {
-  background: url('../../img/IMG_2350.JPG') no-repeat;
+.left {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.polaroid {
+  float: left;
+  background-color: #ffffff;
+  padding: 10px 10px 20px 10px;
+  margin: 2em;
+}
+.polaroid:nth-child(odd) {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 0.125em solid @yellow;
+}
+a:hover {
+  text-decoration: none;
+  border-bottom: 0.125em solid @blue;
+}
+
+.navbar a {
+   text-decoration: none;
+   border-bottom: 0.125em solid @blue;
+ }
+.navbar a:hover {
+  text-decoration: none;
+  border-bottom: 0.125em solid @yellow;
+}
+
+a.navbar-brand {
+  text-decoration: none;
+  border-bottom: none;
+}
+a.navbar-brand:hover {
+  text-decoration: none;
+  border-bottom: none;
 }
